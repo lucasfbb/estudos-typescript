@@ -1,0 +1,7 @@
+npm i -D typescript
+npm i -D ts-node-dev
+npm i -D ts-node
+
+npx tsc --init  -> inicializar o typescript no projeto
+
+npx tsc .\app.ts -> Rodar o typescript
