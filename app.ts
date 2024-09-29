@@ -1,7 +1,10 @@
-const soma = (a: number, b: number) => {
-    console.log(a+b)
-}
+import { DioAccount } from './class/DioAccount'
+import { CompanyAccount } from './class/CompanyAccount'
+import { PeopleAccount } from './class/PeopleAccount'
 
-soma(2,3)
-// soma('lucas', 'vasco') ISSO NAO DEIXA SER FEITO, VC ESTA PASSANDO 2 STRINGS
-// soma(3, 'vasco') ISSO NAO DEIXA SER FEITO, VC ESTA PASSANDO 1 STRING EM UM DOS ARGUMENTOS
+const account : PeopleAccount = new PeopleAccount(111111,'Lucas', 1)
+const adminAccount : PeopleAccount = new PeopleAccount(2222,'Firmino', 2)
+const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
+console.log(account)
+console.log(adminAccount)
+console.log(companyAccount)
